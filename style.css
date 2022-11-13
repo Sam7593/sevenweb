@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* HEADER  */
+header{
+    padding: 20px;             
+    width: 100%;
+    height: 1000px;
+    animation: bg-gradient 1s ease infinite;
+
+    background: linear-gradient(-60deg, #243688 2%, #151515 50%);
+    background-size: 400% 400%;
+
+    animation: bgGradient 8s ease infinite;
+}
+
+@keyframes bgGradient {
+    0%{background-position:0% 83%}
+    50%{background-position:100% 18%}
+    100%{background-position:0% 83%}
+}
+header div{
+    display: flex;
+    margin: auto;
+}
+header div div{
+    display: block;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header li{
+    display: inline-block;
+    margin: 20px;
+}
+nav{
+    animation:fadeInLeft 1s;
+}
+nav ul li{
+    position: relative;
+}
+
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: crimson;
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    transition: all 0.5s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
+#first_msg{
+    animation: fadeInLeft 1s;
+}
+#first_msg .btn-1{
+    position: static;
+    display: block;
+    margin-top: 30px;
+}
+#first_img{
+    text-indent: -99999px;
+    position: relative;
+    top:50px;
+    background-image: url("/imgs/simpleManish.png");
+    background-size: cover;
+    background-position: center;
+    border-style:solid;
+    border-radius: 10px;
+    border-width: 1.5px;
+    width: 600px;
+    height: 400px;
+    transform: perspective(1000px) rotateY(-20deg);
+}
+/* END HEADER */
+
+/* About */
+#About{
+    position: static;
+    margin-top: 30px;
+    height: 25vh;
+}
+#About div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#About div > * {
+    display: block;
+    margin:20px;
+}
+#About p{
+    color:white;
+    width: 450px;
+    font-size: 24px;
+    font-weight: 100; 
+    /* position: relative; */
+    text-align: center;
+    left:2rem;
+    top:5rem;
+}
+
+#About img{
+    transform: scale(1.2);
+    width: 20vh;
+    height: 20vh;  
+    /* position: absolute; */
+    right: 5%;
+    top:10rem;
+}
+/* END ABOUT */
+
+/* App and Games */
+.app_games{
+    height: 53vh;
+    justify-content: center;
+}
+/* END App and Games */
+
+.btn-1{
+    border-style: solid;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: crimson;
+    transition: all .5s;
+    width: 120px;
+}
+
+.btn-1:hover{
+    background-color: crimson;
+    width: 150px;
+    font-size: 20px;
+}
+.btn-2{
+    transition: all 0.3s;
+}
+.btn-2:hover{
+    font-size: 20px;
+}
+.btn-3{
+    padding: 3%;
+    text-align: center;
+    background-color: #151515;
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+.btn-3:hover{
+    background-color: #3838ff;
+}
+.btn-4{
+    padding: 3%;
+    text-align: center;
+    background-color: #151515;
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+.btn-4:hover{
+    background-color:crimson;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    background: black;
+    /* padding: 10px; */
+    position: relative;
+    top: 30px;
+    height: 30vh;
+}
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    position: relative;
+}
+item-thub{
+    color: white;
+    width: 45vh;
+    height: 35vh;
+    max-width: 60vh;
+    max-height: 50vh;
+    margin: 100px 50px 120px 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.3s;
+}
+
+item-thub:hover{
+    transform: scale(1.05);
+}
+.thub_title{
+    text-align : center; 
+    position:relative; 
+    top:-45px;
+}
+
+.thub_title{transition: all 0.3s;}
+.thub_des{
+    text-align: center;
+    position: relative;
+    /* top:200px; */
+    margin-bottom: 18px;
+    color:white;
+    transition: all 0.3s;
+}
+
+.sep{
+    letter-spacing: 0.5rem;
+    font-weight: 1;
+    position: relative;
+    width: auto;
+    text-align: center;
+    background-color:rgb(20,20,20);
+    padding: 10px;
+    border-style:dotted;
+    border-width: 2px 0px 2px 0px;
+    animation: fadeInDown 1s;
+
+}
+#bottomStuff{
+    background-color: rgb(28, 28, 28);
+    top:-21px;
+    position:relative;
+}
+
+.scale-1{
+    transition: all 0.3s;
+}
+.scale-1:hover{
+    transform: scale(1.1);
+}
+.hidden{
+    opacity: 0;
+}
+.show{
+    opacity: 1;
+    animation: fadeInDown 1s;
+}
+
+@media all and (max-width:600px){
+    body{
+        font-size: 14px;
+    }
+    #first_img{
+        width: 300px;
+        height: 200px;
+    }
+    #first_msg{
+        margin: 100px 0px 0px 0px;
+    }
+    #About p{
+        font-size: 19px;
+    }
+}
