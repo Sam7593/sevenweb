@@ -280,3 +280,41 @@ item-thub:hover{
         font-size: 19px;
     }
 }
+
+@media (hover:hover) {
+    .scale-1:hover{
+        transform: scale(1.1);
+    }
+    nav ul li:hover::after{
+        width: 100%;
+    }
+    item-thub:hover{
+        transform: scale(1.05);
+    }
+    .btn-4:hover{
+        background-color:crimson;
+    }
+    .btn-3:hover{
+        background-color: #3838ff;
+    }
+    .btn-2:hover{
+        font-size: 20px;
+    }
+    .btn-1:hover{
+        background-color: crimson;
+        width: 150px;
+        font-size: 20px;
+    }
+}
+
+@media (hover:none) {
+    .btn-4{
+        background-color:crimson;
+    }
+    .btn-3{
+        background-color: #3838ff;
+    }
+    .btn-2{
+        font-size: 15px;
+    }
+}
