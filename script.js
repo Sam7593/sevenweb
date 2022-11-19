@@ -1,14 +1,14 @@
 class item_thub extends HTMLElement{
     constructor(){
         super();
-        const stl = this.style;
         let atb = this.attributes;
         let img = this.attributes.img.value;
 
+        const stl = this.style;
         const title = document.createElement("h3");
         title.classList.add("thub_title");
         title.innerText = atb.title.value;
-        this.appendChild(title);
+        // this.appendChild(title);
 
         const btn = document.createElement("a");
         btn.setAttribute('type','button');
@@ -35,14 +35,22 @@ class item_thub extends HTMLElement{
         // this.appendChild(des);
 
         const div = document.createElement("div");
-        div.style = 'display:flex; width:100%; height:15%;flex-direction:column; position:relative; top:320px;';
+        div.style = `display:flex; width:100%; height:100%;flex-direction:column;
+        align-items:center; justify-content:center;`;
 
         // div.appendChild(title);
+        const i = document.createElement("div");
+        i.style = `background-image:url(${img});
+            background-size:contain;position:center;
+            width:300px; height:300px;background-position:center;margin:20px;
+            background-repeat: no-repeat;`;
+        div.appendChild(i);
+
+        div.appendChild(title);
         div.appendChild(des);
         div.appendChild(btn);
+        // this.style = `background-image:url(${img}`;
         this.appendChild(div);
-
-        stl.backgroundImage = `url(${img}`;
     }
 } 
 window.customElements.define('item-thub', item_thub);
