@@ -62,9 +62,6 @@ nav ul li::after{
     transition: all 0.5s;
 }
 
-nav ul li:hover::after{
-    width: 100%;
-}
 #first_msg{
     animation: fadeInLeft 1s;
 }
@@ -143,17 +140,10 @@ nav ul li:hover::after{
     width: 120px;
 }
 
-.btn-1:hover{
-    background-color: crimson;
-    width: 150px;
-    font-size: 20px;
-}
 .btn-2{
     transition: all 0.3s;
 }
-.btn-2:hover{
-    font-size: 20px;
-}
+
 .btn-3{
     padding: 3%;
     text-align: center;
@@ -161,18 +151,13 @@ nav ul li:hover::after{
     transition: all 0.3s;
     border-radius: 10px;
 }
-.btn-3:hover{
-    background-color: #3838ff;
-}
+
 .btn-4{
     padding: 3%;
     text-align: center;
     background-color: #151515;
     transition: all 0.3s;
     border-radius: 10px;
-}
-.btn-4:hover{
-    background-color:crimson;
 }
 
 a{
@@ -213,9 +198,6 @@ item-thub{
     transition: all 0.3s;
 }
 
-item-thub:hover{
-    transform: scale(1.05);
-}
 .thub_title{
     text-align : center; 
     position:relative; 
@@ -253,9 +235,6 @@ item-thub:hover{
 
 .scale-1{
     transition: all 0.3s;
-}
-.scale-1:hover{
-    transform: scale(1.1);
 }
 .hidden{
     opacity: 0;
