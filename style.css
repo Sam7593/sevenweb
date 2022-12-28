@@ -236,7 +236,7 @@ item-thub{
     text-align: center;
     background-color:rgb(20,20,20);
     padding: 10px;
-    border-style:dotted;
+    border-style:solid;
     border-width: 2px 0px 2px 0px;
     animation: fadeInDown 1s;
 
